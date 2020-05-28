@@ -1,0 +1,91 @@
+.header {
+    background-image: url(../city/break-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas:
+    "steps" "navigation" 
+    "hero" "hero";
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+ .main {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     grid-template-rows: 2fr;
+     grid-template-areas:
+     "section" "aside"
+     "aside"  "aside";
+     height: 400px;
+ }
+ .footer {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr;
+     grid-template-areas: 
+     "information";
+ }
+
+ .navigation {
+     float: left;
+     list-style: none;
+     text-align: center;
+     margin: 40px;
+ }
+
+ .navigation-list ul {
+    display: inline;
+    margin: 20px;
+ }
+
+
+ a:hover {
+    background-color: tomato;
+  
+}
+
+a {
+    padding: 20px;
+
+  
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.steps {
+     text-align: left;
+     margin: 20px;
+     padding-left: 90px;
+}
+
+.hero {
+    padding: 100px;
+    font-size: 40px;
+}
+
+
+.hero-icon {
+    list-style: none;
+}
+
+.hero-icon p {
+    font-size: 15px;
+}
+.hero-icon li {
+    font-size: 25px;
+}
+
+.fa-map-marker {
+    color: black;
+}
+
+.circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: white;
+  }
