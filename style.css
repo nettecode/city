@@ -11,6 +11,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+
  .main {
      display: grid;
      grid-template-columns: 2fr 1fr;
@@ -20,6 +21,7 @@
      "aside"  "aside";
      height: 400px;
  }
+
  .footer {
      display: grid;
      grid-template-columns: 1fr;
@@ -43,13 +45,10 @@
 
  a:hover {
     background-color: tomato;
-  
 }
 
 a {
     padding: 20px;
-
-  
 }
 
 h2 {
@@ -75,6 +74,7 @@ h2 {
 .hero-icon p {
     font-size: 15px;
 }
+
 .hero-icon li {
     font-size: 25px;
 }
