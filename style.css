@@ -1,4 +1,5 @@
 html body {
+    /* FIXME: 0px -> 0 ; https://github.com/CSSLint/csslint/wiki/Disallow-units-for-zero-values */
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
@@ -9,12 +10,15 @@ html body {
     background-image: url("./girl.jpg");
     background-position: center;
     opacity: 0.8;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 6fr;
     grid-template-areas:
     "steps" "navigation" 
     "hero" "hero";
+
+    /* FIXME: Duplikacja ustawień */
     font-family: 'Roboto', sans-serif;
     color: white;
 }
@@ -60,6 +64,7 @@ h2 {
 
 .steps {
      text-align: left;
+     /* FIXME: Podejrzyj w devtools (F12) - czy font: bold w ogóle działa? */
      font: bold;
      margin: 20px;
      padding-left: 90px;
