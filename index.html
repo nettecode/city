@@ -1,50 +1,62 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>City break</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
-        <link href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header class="header">
-            <div class="steps">
-                    <h2>Watch Your Steps</h2>
-            </div>
-            <div class="navigation">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>City break</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="steps">
+            <h2>Watch Your Steps</h2>
+        </div>
+        <div class="navigation">
             <ul class="navigation-list">
+                <!-- FIXME: About & Docs to też a -->
                 <li>About</li>
                 <li>Docs</li>
                 <li><a>Login</a></li>
             </ul>
+        </div>
+        <section class="hero">
+            <!-- 
+                FIXME:
+                Tutaj nadal trochę problemowo:
+                - hero-section to tak naprawdę cała ta sekcja z klasą hero, więc użycie hero-section w class poniżej troszkę myli...
+                - wspominałam o tym, że raczej Popular Cities nie powinny być w ramach osobnych <li> i <ul>
+                    <ul> mogłoby opakowywać raczej każdy taki zestaw: ikonka + napis
+                
+            -->
+            <span>Do you need</span>
+            <span>a city break?</span>
+            <div class="hero-section">
+                <div class="circle"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <ul class="options">
+                    <li>Popular</li>
+                    <li>Cities</li>
+                </ul>
             </div>
-            <section class="hero">
-                <span>Do you need</span>
-                <span>a city break?</span>
-                <div class="hero-section">
-                    <div class="circle"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                        <ul class="options">
-                                <li>Popular</li>
-                                <li>Cities</li>
-                        </ul>
-                    </div> 
-            </section>
-        </header>
-        <!--
-        <main class="main">
-            <section class="section">
-                <div>section</div>
-                <div>section</div>
-            </section>
-            <aside> class="aside">Aside<aside>
-        </main>
-       <footer class="footer">
-        <div class="information">Footer in progress</div>
-       </footer> 
-       -->
-    </body>
-    </html>
+        </section>
+    </header>
+    <!--
+    <main class="main">
+        <section class="section">
+            <div>section</div>
+            <div>section</div>
+        </section>
+        <aside> class="aside">Aside<aside>
+    </main>
+   <footer class="footer">
+    <div class="information">Footer in progress</div>
+   </footer> 
+   -->
+</body>
+
+</html>
